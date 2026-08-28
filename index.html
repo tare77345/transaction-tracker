@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transaction Tracker | Tarik Terzic</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="expense-container">
+        <h1>Transaction Tracker</h1>
+
+        <div class="balance">
+            <p>Balance</p>
+            <h2 id="balance">$0.00</h2>
+        </div>
+        <div class="summary">
+            <div>
+                <p>Income</p>
+                <h3 id="income">$0.00</h3>
+            </div>
+            <div>
+                <p>Expenses</p>
+                <h3 id="expenses">$0.00</h3>
+            </div>
+        </div>
+
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount" step="0.01">
+
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <p id="form-error"></p>
+            <button type="submit" id="submit-button">
+                Add Transaction 
+            </button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+            <button id="reset">
+                Reset Tracker
+            </button>
+        <h2>Transactions</h2>
+
+        <ul id="transaction-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
