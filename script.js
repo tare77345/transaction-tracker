@@ -54,6 +54,8 @@ resetElement.addEventListener("click", function (event) {
 
     localStorage.removeItem("transactions");
 
+    formErrorElement.textContent = "";
+
     renderTransactions();
     showValues();
 });
